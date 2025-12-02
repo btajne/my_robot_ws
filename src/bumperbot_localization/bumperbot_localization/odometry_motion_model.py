@@ -35,10 +35,10 @@ class OdometryMotionModel(Node):
         self.last_odom_theta = 0.0
         self.is_first_odom = True
 
-        self.declare_parameter('alpha1', 0.1)
-        self.declare_parameter('alpha2', 0.1)
+        self.declare_parameter('alpha1', 0.05)
+        self.declare_parameter('alpha2', 0.05)
         self.declare_parameter('alpha3', 0.1)
-        self.declare_parameter('alpha4', 0.1)
+        self.declare_parameter('alpha4', 0.05)
         self.declare_parameter('nr_samples', 300)
 
         self.alpha1 = self.get_parameter('alpha1').get_parameter_value().double_value
